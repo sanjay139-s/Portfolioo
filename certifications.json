@@ -1,0 +1,135 @@
+[
+  {
+    "id": "oracle-database-23ai",
+    "title": "Applied Database Systems 23ai",
+    "issuer": "Oracle Academy",
+    "issuerSlug": "oracle",
+    "issuerLogo": "assets/icons/oracle.svg",
+    "issuerInitials": "OA",
+    "badgeColor": "#F80000",
+    "category": "Database Architecture & AI",
+    "issueDate": "December 17, 2025",
+    "credentialId": "NCET-OA-23AI",
+    "image": "assets/certifications/oracle-applied-database-systems-23ai.jpeg",
+    "learnedPoints": [
+      "Mastered enterprise relational database modeling and strict 3NF normalization schemas.",
+      "Engineered high-performance SQL queries, composite B-tree indices, and transaction integrity.",
+      "Implemented AI Vector Search capabilities natively integrated in Oracle Database 23ai.",
+      "Architected multi-table constraints, declarative foreign keys, and stored procedures."
+    ]
+  },
+  {
+    "id": "udemy-ai-chatgpt",
+    "title": "Introduction to AI and ChatGPT",
+    "issuer": "Udemy",
+    "issuerSlug": "udemy",
+    "issuerLogo": "assets/icons/udemy.svg",
+    "issuerInitials": "UD",
+    "badgeColor": "#A435F0",
+    "category": "Generative AI & LLMs",
+    "issueDate": "November 20, 2025",
+    "credentialId": "UC-0d17f889",
+    "image": "assets/certifications/udemy-intro-ai-chatgpt.png",
+    "learnedPoints": [
+      "Foundational theory of Large Language Models (LLMs), attention mechanisms, and transformers.",
+      "Advanced prompt engineering strategies for structured reasoning and automated workflows.",
+      "Integration of generative AI tools into production software engineering lifecycles.",
+      "Context window management, tokenization optimizations, and prompt safety hygiene."
+    ]
+  },
+  {
+    "id": "cisco-python-essentials",
+    "title": "Python Essentials 1",
+    "issuer": "Cisco Networking Academy",
+    "issuerSlug": "cisco",
+    "issuerLogo": "assets/icons/cisco.svg",
+    "issuerInitials": "CA",
+    "badgeColor": "#049FD9",
+    "category": "Programming & Scripting",
+    "issueDate": "August 15, 2025",
+    "credentialId": "CISCO-NETACAD-PY1",
+    "image": "assets/certifications/cisco-python-essentials-1.png",
+    "learnedPoints": [
+      "Core Python language mechanics, primitive types, control flow, and logical evaluations.",
+      "Functional modular programming using packages, built-in libraries, and custom modules.",
+      "Data processing pipelines leveraging tuples, dictionaries, and list comprehensions.",
+      "Granular exception handling, error propagation, and secure input validation."
+    ]
+  },
+  {
+    "id": "redhat-python-ad141",
+    "title": "Python Programming with Red Hat (AD141)",
+    "issuer": "Red Hat Academy",
+    "issuerSlug": "redhat",
+    "issuerLogo": "assets/icons/redhat.svg",
+    "issuerInitials": "RH",
+    "badgeColor": "#EE0000",
+    "category": "Enterprise Systems & Automation",
+    "issueDate": "August 12, 2025",
+    "credentialId": "RHA-AD141-V9",
+    "image": "assets/certifications/redhat-python-programming-ad141.png",
+    "learnedPoints": [
+      "Developed automated system administration scripts for Red Hat Enterprise Linux (RHEL).",
+      "Utilized file system I/O, regex text transformation, and POSIX process controls.",
+      "Applied object-oriented programming (OOP) paradigms for maintainable system tooling.",
+      "Managed enterprise Python packages, virtual environments, and CLI utilities."
+    ]
+  },
+  {
+    "id": "redhat-java-ee",
+    "title": "Application Development I: Programming in Java EE",
+    "issuer": "Red Hat Academy",
+    "issuerSlug": "redhat",
+    "issuerLogo": "assets/icons/redhat.svg",
+    "issuerInitials": "RH",
+    "badgeColor": "#EE0000",
+    "category": "Enterprise Java Systems",
+    "issueDate": "April 20, 2026",
+    "credentialId": "RHA-JB183-JEE",
+    "image": "assets/certifications/redhat-java-ee-development.png",
+    "learnedPoints": [
+      "Architected multi-tier enterprise web backends using Java EE platform specifications.",
+      "Implemented transactional data services with JPA (Java Persistence API) and JDBC.",
+      "Applied enterprise OOP patterns, dependency injection, and clean separation of concerns.",
+      "Engineered robust RESTful web endpoints and containerized server deployments."
+    ]
+  },
+  {
+    "id": "leetcode-200-days",
+    "title": "200 Days Badge 2026",
+    "issuer": "LeetCode",
+    "issuerSlug": "leetcode",
+    "issuerLogo": "assets/icons/leetcode.svg",
+    "issuerInitials": "LC",
+    "badgeColor": "#FFA116",
+    "category": "Algorithmic Rigor",
+    "issueDate": "August 31, 2026",
+    "credentialId": "LEETCODE-200D-2026",
+    "image": "assets/certifications/leetcode-200-days-badge.png",
+    "learnedPoints": [
+      "Demonstrated rigorous daily algorithmic practice with 200+ solved challenge days.",
+      "Mastered optimal implementations for Dynamic Programming, Graph Traversals, and BSTs.",
+      "Achieved sub-millisecond execution times and optimal O(1) auxiliary space allocations.",
+      "Refactored complex computational patterns into optimal two-pointer and sliding-window logic."
+    ]
+  },
+  {
+    "id": "leetcode-100-days",
+    "title": "100 Days Badge 2026",
+    "issuer": "LeetCode",
+    "issuerSlug": "leetcode",
+    "issuerLogo": "assets/icons/leetcode.svg",
+    "issuerInitials": "LC",
+    "badgeColor": "#FFA116",
+    "category": "Algorithmic Rigor",
+    "issueDate": "May 21, 2026",
+    "credentialId": "LEETCODE-100D-2026",
+    "image": "assets/certifications/leetcode-100-days-badge.png",
+    "learnedPoints": [
+      "Built consistent algorithmic muscle memory solving competitive coding problems daily.",
+      "Deepened expertise in Arrays, Hash Maps, Linked Lists, Stack, and Recursion.",
+      "Engineered exact boundary and edge-case handling for binary search on ranges.",
+      "Developed high-velocity problem pattern recognition under strict time constraints."
+    ]
+  }
+]

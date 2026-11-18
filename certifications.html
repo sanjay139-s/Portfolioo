@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ultimate Collections • Certifications by Sanjay Shekar</title>
+  <meta name="description" content="Interactive editorial showcase of verified technical certifications, academy credentials, and algorithmic badges earned by Sanjay Shekar, inspired by Pinterest curved fan web design.">
+
+  <!-- Google Fonts matching Portfolio -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="certifications.css">
+
+  <!-- GSAP 3 & Flip Plugin for Hardware-Accelerated Smooth Motion -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+</head>
+<body class="arc-mode">
+
+  <!-- ==========================================================
+       TOP UTILITY HEADER BAR
+       ========================================================== -->
+  <header class="cert-header" role="banner">
+    <!-- Monogram Brand Pill -->
+    <a href="index.html" class="nav-brand-pill" title="Return to Main Portfolio">
+      <span class="brand-monogram">SS</span>
+      <div class="brand-text-group">
+        <span class="brand-text">Sanjay Shekar</span>
+        <span class="brand-sub">← Portfolio</span>
+      </div>
+    </a>
+
+    <!-- Center Mode Indicator Pill -->
+    <div class="view-indicator-pill" id="viewIndicator">
+      <span class="indicator-dot"></span>
+      <span id="indicatorText">Arc Fan Deck (Click to Spread)</span>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <!-- Toggle Arc / Grid Button -->
+      <button class="action-pill-btn gold" id="toggleLayoutBtn" aria-label="Toggle Arc Deck or Grid View">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+          <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+          <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+          <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+        </svg>
+        <span class="btn-label" id="toggleBtnText">Spread Cards</span>
+      </button>
+
+      <!-- Resume Link -->
+      <a href="resume.html" target="_blank" class="action-pill-btn outline" title="Open Curriculum Vitae">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+        </svg>
+        <span class="btn-label">Resume PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Giant Faint Background Watermark -->
+  <div class="background-watermark" aria-hidden="true" id="bgWatermark">
+    COLLECTIONS
+  </div>
+
+  <!-- ==========================================================
+       MAIN EDITORIAL SHOWCASE FRAME (MATCHING PINTEREST DESIGN)
+       ========================================================== -->
+  <main class="collection-showcase-stage" id="showcaseStage">
+
+    <!-- White Frame Canvas Container (Like Pinterest App Frame) -->
+    <div class="pinterest-canvas-frame" id="canvasFrame">
+
+      <!-- Top Micro Nav Inside Frame -->
+      <div class="frame-sub-nav">
+        <span class="frame-brand-label">Credentials.</span>
+        <div class="frame-nav-links">
+          <a href="index.html#hero">Home</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="frame-user-pill">
+          <span class="user-avatar-dot"></span>
+          <span class="badge-count-pill" id="frameCounter">7</span>
+        </div>
+      </div>
+
+      <!-- Hero Header with Morphing Title -->
+      <div class="frame-hero-header">
+        <!-- Floating Speech Bubbles from Pinterest Pin -->
+        <div class="floating-pill-badge pill-left" id="pillLeft" aria-hidden="true">
+          <span class="pill-sparkle">✨</span>
+          <span>7 Verified Honors</span>
+        </div>
+
+        <div class="floating-pill-badge pill-right" id="pillRight" aria-hidden="true">
+          <span class="pill-sparkle">🏆</span>
+          <span>Top Tech Academies</span>
+        </div>
+
+        <!-- Dynamic Main Title -->
+        <div class="hero-title-wrap">
+          <p class="hero-super-title" id="heroSuperTitle">The Ultimate</p>
+          <h1 class="hero-main-title" id="heroMainTitle">COLLECTIONS</h1>
+        </div>
+      </div>
+
+      <!-- ========================================================
+           INTERACTIVE CARDS SHOWCASE WRAPPER
+           In arc-mode: Overlapping curved fan deck
+           In grid-mode: Straightened responsive multi-column grid
+           ======================================================== -->
+      <div class="cards-showcase-wrapper" id="cardsShowcase">
+        <div class="cert-cards-track" id="certCardsTrack">
+          <!-- Dynamically populated from certifications.json -->
+        </div>
+      </div>
+
+      <!-- Arc Mode Bottom Section (Subtitle + Pill Button) -->
+      <div class="arc-footer-controls" id="arcFooterControls">
+        <p class="arc-description-text" id="arcDescription">
+          We do not divide our engineering expertise into theory and practice. Verified academy honors earned across Oracle 23ai, Red Hat Enterprise, Cisco NetAcad, and LeetCode algorithmic mastery.
+        </p>
+        <button class="explore-pill-btn" id="exploreDeckBtn" aria-label="Explore all certifications in grid view">
+          <span>Explore All Credentials</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Bottom Frame Signature -->
+      <div class="frame-bottom-bar">
+        <span>© 2026 Sanjay Shekar • All Verified Credentials</span>
+      </div>
+
+    </div>
+
+    <!-- Sticky Floating Action Bar when Grid View is Active -->
+    <div class="floating-controls-bar" id="floatingControls" aria-hidden="true">
+      <button class="stack-back-btn" id="stackBackBtn" title="Stack Cards Back into Pinterest Arc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+        </svg>
+        <span>Stack to Arc Deck</span>
+      </button>
+
+      <div class="grid-stats-chip" id="gridStatsChip">
+        Showing 7 Certifications
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================
+       HIGH-RESOLUTION LIGHTBOX MODAL
+       ========================================================== -->
+  <div class="lightbox-backdrop" id="certLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-hidden="true">
+    <div class="lightbox-dialog" id="lightboxDialog">
+      <div class="lightbox-header">
+        <div class="lightbox-issuer-info">
+          <div class="lightbox-badge-icon" id="lightboxIssuerBadge"></div>
+          <div>
+            <h3 class="lightbox-title" id="lightboxTitle">Certification Title</h3>
+            <span class="lightbox-issuer-name" id="lightboxIssuer">Issuer Organization</span>
+          </div>
+        </div>
+        <div class="lightbox-actions">
+          <a href="#" target="_blank" class="lightbox-action-btn" id="lightboxOpenLink" title="View Full Original Resolution">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <span>Original</span>
+          </a>
+          <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="lightbox-media-wrap">
+        <img src="" alt="Full Certificate View" class="lightbox-img" id="lightboxImg">
+      </div>
+
+      <div class="lightbox-footer">
+        <div class="lightbox-meta-row">
+          <span class="meta-item" id="lightboxDate">Issued: December 2025</span>
+          <span class="meta-item" id="lightboxCategory">Category: Database</span>
+          <span class="meta-item" id="lightboxCredentialId">ID: NCET-OA-23AI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="certifications.js"></script>
+</body>
+</html>

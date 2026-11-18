@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjay Shekar - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a1a;
+      background: #ffffff;
+      line-height: 1.5;
+      font-size: 13.5px;
+      padding: 36px 48px;
+    }
+    @media print {
+      body {
+        padding: 24px 32px;
+      }
+      .no-print {
+        display: none !important;
+      }
+      @page {
+        margin: 12mm 15mm;
+      }
+    }
+    .header {
+      border-bottom: 2px solid #000000;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+    .name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .contact-line {
+      font-size: 13px;
+      color: #333333;
+      margin-bottom: 5px;
+    }
+    .contact-line a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .links-line {
+      font-size: 13px;
+      font-weight: 600;
+      color: #000000;
+    }
+    .links-line a {
+      color: #000000;
+      text-decoration: underline;
+      margin-right: 12px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #000000;
+      border-bottom: 1.5px solid #dcdcdc;
+      padding-bottom: 3px;
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .item-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #000000;
+    }
+    .item-sub {
+      font-size: 13px;
+      color: #444444;
+      font-style: italic;
+    }
+    .item-date {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #444444;
+    }
+    ul {
+      margin-left: 18px;
+      margin-bottom: 8px;
+    }
+    li {
+      margin-bottom: 4px;
+      color: #2b2b2b;
+      line-height: 1.45;
+    }
+    .skill-category {
+      margin-bottom: 6px;
+    }
+    .skill-category strong {
+      color: #000000;
+      font-weight: 700;
+    }
+    .actions-bar {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .btn {
+      background: #e8b100;
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 9999px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 13px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-secondary {
+      background: #111;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="actions-bar no-print">
+    <button class="btn" onclick="window.print()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Print / Save as PDF
+    </button>
+    <a href="index.html" class="btn btn-secondary">
+      Back to Portfolio
+    </a>
+  </div>
+
+  <div class="header">
+    <h1 class="name">Sanjay Shekar</h1>
+    <div class="contact-line">
+      Bengaluru, Karnataka, India &nbsp;|&nbsp; +91 7022811423 &nbsp;|&nbsp; 
+      <a href="mailto:sanjayshekar139@gmail.com">sanjayshekar139@gmail.com</a>
+    </div>
+    <div class="links-line">
+      <a href="https://www.linkedin.com/in/sanjay-shekar-06bb1837a/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/sanjay139-s" target="_blank">GitHub</a>
+      <a href="https://leetcode.com/u/sanjay139/" target="_blank">LeetCode</a>
+      <a href="https://www.hackerrank.com/profile/sanjayshekar139" target="_blank">HackerRank</a>
+      <a href="http://codechef.com/users/sanjay_123_s" target="_blank">CodeChef</a>
+    </div>
+  </div>
+
+  <div class="section-title">Education</div>
+  <div class="item-header">
+    <span class="item-title">Nagarjuna College of Engineering and Technology</span>
+    <span class="item-date">2024 – 2028</span>
+  </div>
+  <div class="item-header" style="margin-bottom: 6px;">
+    <span class="item-sub">Bachelor of Engineering (B.E.) in Artificial Intelligence and Machine Learning</span>
+    <span class="item-date" style="font-weight: 700; color: #000;">CGPA: 8.6 / 10</span>
+  </div>
+
+  <div class="section-title">Technical Skills</div>
+  <div class="skill-category"><strong>Languages:</strong> Python, C, C++, Java, SQL, JavaScript</div>
+  <div class="skill-category"><strong>GenAI & Tools:</strong> LangChain, Groq API, Streamlit, Prompt Engineering, Git, GitHub, Linux (RHEL), VS Code</div>
+  <div class="skill-category"><strong>Databases:</strong> MySQL, Oracle 23ai, MySQL Workbench, Normalization (3NF), Query Optimization</div>
+  <div class="skill-category"><strong>Core CS:</strong> Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks</div>
+
+  <div class="section-title">Projects</div>
+  
+  <div class="item-header">
+    <span class="item-title">AI Placement Coach – LLM-Powered Chatbot</span>
+    <span class="item-date">Python, LangChain, Groq API, Streamlit, python-dotenv</span>
+  </div>
+  <ul>
+    <li>Built an AI chatbot with LangChain's ChatGroq wrapper and openai/gpt-oss-120b model, acting as a dedicated placement and career mentor.</li>
+    <li>Engineered interactive chat interface in Streamlit with session state memory for multi-turn conversations. Secured API keys via .env configuration.</li>
+  </ul>
+
+  <div class="item-header">
+    <span class="item-title">FITTTTRACK – Smart Fitness Goal Planner & Analytics Tool</span>
+    <span class="item-date">Python, MySQL, Tkinter</span>
+  </div>
+  <div class="item-sub" style="margin-bottom: 3px;">Lead Backend & Database Developer</div>
+  <ul>
+    <li>Engineered multi-user fitness tracking platform for goal setting, workout logging, and progress visualization with MET-based calorie algorithms.</li>
+    <li>Designed normalized MySQL database schema in 3NF with foreign keys and relational constraints. Indexing and query tuning boosted query performance by 30%.</li>
+  </ul>
+
+  <div class="item-header">
+    <span class="item-title">Smart Expense Tracker – Financial Management System</span>
+    <span class="item-date">Java, Python, SQL</span>
+  </div>
+  <div class="item-sub" style="margin-bottom: 3px;">Backend & Database Developer</div>
+  <ul>
+    <li>Architected database-backed expense tracking software with category analytics, monthly spending aggregations, and automated budget limit notifications.</li>
+  </ul>
+
+  <div class="item-header">
+    <span class="item-title">MiniCalc – Console Calculator</span>
+    <span class="item-date">Java, OOP</span>
+  </div>
+  <ul>
+    <li>Developed command-line mathematical calculator in Java supporting multi-operator expression evaluation, OOP principles, and robust exception handling.</li>
+  </ul>
+
+  <div class="section-title">Problem Solving & Competitive Programming</div>
+  <ul>
+    <li><strong>200+ LeetCode Problems Solved:</strong> Strong proficiency in Arrays, Strings, Linked Lists, Trees, Hashing, Recursion, and Dynamic Programming.</li>
+    <li>Active competitive programmer on <strong>HackerRank</strong> and <strong>CodeChef</strong> solving algorithmic challenges.</li>
+  </ul>
+
+  <div class="section-title">Certifications</div>
+  <ul>
+    <li><strong>Oracle Academy:</strong> Applied Database Systems 23ai</li>
+    <li><strong>NPTEL:</strong> Computer Networks (Passed)</li>
+    <li><strong>Cisco Networking Academy:</strong> Python Essentials</li>
+    <li><strong>Red Hat Academy:</strong> Python Programming (AD141)</li>
+  </ul>
+</body>
+</html>
